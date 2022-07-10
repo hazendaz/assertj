@@ -221,6 +221,7 @@ Copyright ${project.inceptionYear}-${currentYear} the original author or authors
               <additionalOption>-html5</additionalOption>
               <additionalOption>--allow-script-in-comments</additionalOption>
             </additionalOptions>
+            <legacyMode>true</legacyMode>
             <javadocDirectory>${rootDirectory}/javadoc-theme</javadocDirectory>
             <addStylesheets>
               <stylesheet>assertj-theme.css</stylesheet>
