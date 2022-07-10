@@ -24,7 +24,6 @@
       --add-opens=java.base/java.util=ALL-UNNAMED
       --add-opens=java.base/sun.nio.fs=ALL-UNNAMED
     </argLine>
-    <javadocAdditionalOptions>-html5 --allow-script-in-comments</javadocAdditionalOptions>
     <!-- Dependency versions -->
     <byte-buddy.version>1.14.5</byte-buddy.version>
     <hamcrest.version>2.2</hamcrest.version>
@@ -445,12 +444,13 @@
         <configuration>
           <!-- Explicitly set Javadoc locale to English -->
           <locale>en_US</locale>
-          <!-- needed to fix javadoc on java 11+ https://github.com/assertj/assertj/issues/1403 -->
-          <source>8</source>
           <!-- (1) CSS file location -->
           <stylesheetfile>${project.build.directory}/javadoc-stylesheet/assertj-javadoc-min.css</stylesheetfile>
           <!-- init Highlight -->
-          <additionalOptions>${javadocAdditionalOptions}</additionalOptions>
+          <additionalOptions>
+              <additionalOption>-html5</additionalOption>
+              <additionalOption>--allow-script-in-comments</additionalOption>
+          </additionalOptions>
           <nohelp>true</nohelp>
           <bottom><![CDATA[
             Copyright &#169; {currentYear} {organizationName}. All rights reserved.
