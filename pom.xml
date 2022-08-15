@@ -37,7 +37,7 @@
       --add-opens=java.base/sun.nio.fs=ALL-UNNAMED
     </argLine>
     <!-- Dependency versions -->
-    <byte-buddy.version>1.12.12</byte-buddy.version>
+    <byte-buddy.version>1.12.13</byte-buddy.version>
     <hamcrest.version>2.2</hamcrest.version>
     <opentest4j.version>1.2.0</opentest4j.version>
     <!-- Dependency versions overriding -->
